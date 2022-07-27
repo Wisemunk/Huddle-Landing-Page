@@ -1,0 +1,130 @@
+@font-face {
+    font-family: OpenSans;
+    src: url("font/OpenSans.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url("font/Poppins.ttf") format("truetype");
+}
+
+body {
+    background: hsl(257, 40%, 49%) url("images/bg-desktop.svg") no-repeat;;
+    background-size: cover;
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+
+}
+
+#logo {
+    max-width: 30%;
+    height: auto;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    padding: 40px 40px;
+}
+
+.content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content img {
+    max-width: 50%;
+    height: auto;
+    padding: 40px 40px;
+
+}
+
+.parag {
+    font-family: OpenSans, sans-serif;
+    padding: 40px 40px;
+}
+
+.parag p {
+    font-family: Poppins, sans-serif;
+    margin-bottom: 40px;
+}
+
+.parag span {
+    padding: 15px 60px;
+    background: white;
+    color: hsl(257, 40%, 49%);
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+.parag span:hover {
+    color: white;
+    background: violet;
+    cursor: pointer;
+    box-shadow: 4px 3px 8px 1px black;
+}
+
+.content footer {
+    padding: 40px;
+    display: flex;
+    justify-content: right;
+    align-items: end;
+}
+
+.fa {
+    margin: 2%;
+    padding: 10px 2px;
+    font-size: 30px;
+    width: 35px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    color: violet;
+    border-color: violet;
+}
+
+.fa-linkedin {
+    background: rgba(255, 255, 255, 0);
+    color: white;
+}
+
+.fa-facebook {
+    background: rgba(255, 255, 255, 0);
+    color: white;
+}
+
+.fa-twitter {
+    background: rgba(255, 255, 255,0);
+    color: white;
+}
+
+
+
+@media (max-width: 800px) {
+
+    .content {
+        flex-direction: column;
+    }
+
+    .content img {
+        max-width: 60%;
+        height: auto;
+    }
+
+    .parag {
+        margin-left: 20%;
+        margin-right: 20%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .content footer {
+        justify-content: center;
+    }
+}
