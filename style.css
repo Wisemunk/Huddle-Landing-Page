@@ -107,6 +107,10 @@ body {
 
 
 @media (max-width: 800px) {
+    
+    #logo {
+        position: relative;
+    }
 
     .content {
         flex-direction: column;
